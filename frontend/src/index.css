@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-paper text-ink font-sans antialiased; }
+:focus-visible { outline: 2px solid #0b6e99; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+.btn { @apply inline-flex items-center justify-center rounded px-3 py-1.5 text-sm font-medium bg-ink text-white hover:bg-slate-700 disabled:opacity-50; }
+.btn-ghost { @apply inline-flex items-center rounded px-3 py-1.5 text-sm font-medium border border-rail bg-white hover:bg-slate-50 disabled:opacity-50; }
+.input { @apply w-full rounded border border-rail bg-white px-3 py-2 text-sm; }
+.panel { @apply rounded-lg border border-rail bg-white; }
